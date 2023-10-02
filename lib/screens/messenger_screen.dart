@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tekatech/constants.dart';
 import 'package:tekatech/widgets/custom_search_field.dart';
-import 'package:tekatech/widgets/navigation_bar.dart';
 
 class MessengerScreen extends StatelessWidget {
   MessengerScreen({super.key});
@@ -22,19 +21,6 @@ class MessengerScreen extends StatelessWidget {
     "Mariam Sedky",
     "Mahmoud Barakat",
     "Ahmed Ali",
-    "Montaser Ahmed",
-    "Mohamed Sherif",
-    "Ashraf Mohammed",
-    "Nagham Fathy",
-    "Mariam Sedky",
-    "Mahmoud Barakat",
-    "Ahmed Ali",
-    "Montaser Ahmed",
-    "Mohamed Sherif",
-    "Ashraf Mohammed",
-    "Nagham Fathy",
-    "Mariam Sedky",
-    "Mahmoud Barakat",
   ];
 
   List<String> messages = [
@@ -53,15 +39,6 @@ class MessengerScreen extends StatelessWidget {
     "how???",
     "Mariam are you here?",
     "listen to this record",
-    "what are you doing?",
-    "Hi Ali",
-    "Hello Ahmed",
-    "Mohamed ",
-    "Where are you? ",
-    "how???",
-    "Mariam are you here?",
-    "listen to this record",
-    "what are you doing?"
   ];
   List<String> dates = [
     "9:00", "9:10", "9:20", "9:25", "9:14",
@@ -178,7 +155,7 @@ class MessengerScreen extends StatelessWidget {
                   separatorBuilder: (context, index) => const SizedBox(
                         height: 10.0,
                       ),
-                  itemCount: 24),
+                  itemCount: names.length),
             ),
           ],
         ),
